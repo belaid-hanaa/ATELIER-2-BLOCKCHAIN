@@ -1,5 +1,5 @@
 # EXERCICE 2
-## 2. Décris le mode de conversion du texte d’entrée en bits
+## Décris le mode de conversion du texte d’entrée en bits
 
 Le texte d’entrée est converti en une représentation binaire à l’aide de la fonction `text_to_bits()`. Chaque caractère du texte est traité comme un octet de 8 bits. Pour chaque caractère :
 
@@ -14,7 +14,7 @@ __En résumé :__
 chaque caractère → 8 bits → vecteur binaire pour l’automate cellulaire.
 ```
 
-## 3. Explique le processus utilisé pour produire un hash final fixe de 256 bits
+##  Explique le processus utilisé pour produire un hash final fixe de 256 bits
 Le calcul du hash se fait dans la fonction ac_hash(). Le processus est le suivant :
 
 ### Découpage en blocs (chunks) :
@@ -52,7 +52,7 @@ Texte → bits → blocs → CA évolutif → combinaison (XOR) → digest final
 
 Ce processus assure un hash déterministe, sensible aux modifications d’un seul bit, et de taille fixe.
 
-## 4.Vérifie par un test que deux entrées différentes donnent deux sorties différentes.
+## Vérifie par un test que deux entrées différentes donnent deux sorties différentes.
 
 l'entree : `bonjour` et `bonsoir` donent des Hash completement different :
 
